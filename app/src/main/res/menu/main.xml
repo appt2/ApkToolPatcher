@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+            <group
+                android:checkableBehavior="single"
+                android:title="Filter"
+                app:showAsAction="ifRoom|withText">
+                <item
+                    android:id="@+id/menu_show_all_apps"
+                    android:checked="true"
+                    android:title="@string/all_apps" />
+                <item
+                    android:id="@+id/menu_show_google_play_apps"
+                    android:title="Google Play" />
+                <item
+                    android:id="@+id/menu_show_amazon_store_apps"
+                    android:title="Amazon Store" />
+                <item
+                    android:id="@+id/menu_show_system_pre_installed_apps"
+                    android:title="@string/system_apps" />
+                <item
+                    android:id="@+id/menu_show_unknown_source_apps"
+                    android:title="@string/unknown" />
+            </group>
+</menu>

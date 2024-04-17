@@ -1,0 +1,19 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="color_icon_height">72dp</dimen>
+    <dimen name="color_icon_padding">3dp</dimen>
+    <integer name="color_picker_columns">3</integer>
+
+    <dimen name="fastscroller_track_height">70dp</dimen>
+    <dimen name="fastscroller_track_padding">3dp</dimen>
+    <dimen name="big_tab_padding_start">16dp</dimen>
+
+    <dimen name="text_size_caption">25sp</dimen>
+    <dimen name="toolbar_size">100dp</dimen>
+
+
+    <dimen name="one_sp">1sp</dimen>
+	<dimen name="design_tab_text_size">14sp</dimen>
+    <dimen name="design_tab_text_size_2line">12sp</dimen>
+    <dimen name="design_tab_scrollable_min_width">72dp</dimen>
+</resources>

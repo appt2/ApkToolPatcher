@@ -1,0 +1,8 @@
+--- 5.0 RC1-FIX [03-06-20] ---
+- fixed selection crash in some cases
+- fixed list selector in app manager
+- fixed incorrect styles in search screen
+- fixed checkout dialog
+- fixed a number of memory leaks
+--- 5.0 RC1 [02-06-20] ---
+too many fixes. specially for Android 10/11 & more, more, mooooooooore....

@@ -1,0 +1,67 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'apk.tool.patcher'
+    compileSdk 33
+    
+    defaultConfig {
+        applicationId "apk.tool.patcher"
+        minSdk 21
+        targetSdk 29
+        versionCode 1
+        versionName "1.0"
+        
+        vectorDrawables {
+            useSupportLibrary true
+        }
+    }
+    buildFeatures {
+        buildConfig true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+    buildConfigField "boolean", "buildConfig", "true"
+}
+    }
+    
+
+compileOptions {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+    
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    
+    def lifecycle_version = "2.6.0-alpha01"
+    def acraVersion = '5.9.6'
+    
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("com.google.android.material:material:1.9.0")
+    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("androidx.multidex:multidex:2.0.1")
+    implementation "androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.17'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation "ch.acra:acra-mail:$acraVersion"
+    implementation "ch.acra:acra-toast:$acraVersion"
+    implementation "com.google.code.gson:gson:2.8.6"
+    implementation "com.squareup.okhttp3:okhttp:4.3.1"
+    implementation "com.squareup.okhttp3:okhttp-urlconnection:4.3.1"
+    implementation "com.google.guava:guava:28.2-android"
+    implementation 'com.yandex.android:mobmetricalib:5.0.1'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation  'androidx.legacy:legacy-preference-v14:1.0.0'
+    implementation  'androidx.legacy:legacy-support-v4:1.0.0'
+}

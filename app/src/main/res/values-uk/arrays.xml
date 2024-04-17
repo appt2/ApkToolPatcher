@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+    <string-array name="theme_names">
+        <item>White</item>
+        <item>BlackOut</item>
+        <item>Moonlight</item>
+    </string-array>
+
+
+    <string-array name="interest_items">
+        <item>Копіювати шлях до файлу</item>
+        <item>Копіювати частину кода</item>
+        <item>Відкрити в зовнішньому редакторі</item>
+    </string-array>
+
+</resources>

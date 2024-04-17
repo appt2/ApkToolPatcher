@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_size"
+        android:background="?colorPrimary"
+        android:layout_gravity="bottom">
+
+        <ru.svolf.melissa.widget.AutoResizeTextView
+            android:id="@+id/caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="12dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/button_addition"
+            android:maxLines="1"
+            android:text="@string/pref_userguide" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_addition"
+            style="@style/MixedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="8dp"
+            android:text="@string/create_issue"
+            android:textAllCaps="false"
+            app:strokeColor="?colorAccent"
+            app:strokeWidth="1dp"/>
+
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/help"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

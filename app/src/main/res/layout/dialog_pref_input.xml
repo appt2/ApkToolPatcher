@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/field_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:minWidth="400dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/positive"
+            android:layout_margin="16dp"
+            android:textAllCaps="false"
+            android:layout_gravity="end"
+            style="@style/MixedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Test"/>
+</LinearLayout>
